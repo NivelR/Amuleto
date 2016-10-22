@@ -1,14 +1,71 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FindMyPet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="mascotas perdidas adopción animales sueltos" />
+    <title><%= content_for?(:title) ? yield(:title) : "Amuleto by NivelR" %></title>
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Amuleto - Find My Pet please!" %>">
+   <!-- for-mobile-apps -->
+	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps --> 
+
+<!-- fonts -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'><!-- //fonts -->
+
+   <!-- Latest compiled and minified JavaScript -->
+   
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+   
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+	
+		<!--animate-->
+	<script>
+		 new WOW().init();
+	</script>
+<!--//end-animate-->
 
+
+  </head>
   <body>
-    <%= yield %>
+    <header>
+     
+    </header>
+    <main role="main">
+       
+       <%= yield %>
+       <!-- Navegación -->
+        
+       <!-- /Navegación -->
+    </main>
+
+    <!-- Pie -->
+<hr>
+  <footer class="bottom">
+    <div class="container hidden-xs">
+
+   </div>
+
+   <div class="container visible-xs">
+     
+   </div>
+ </footer>
+
   </body>
 </html>
