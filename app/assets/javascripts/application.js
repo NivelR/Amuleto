@@ -11,7 +11,11 @@
 // about supported directives.
 //
 //= require jquery
+//= require bootstrap-sprockets
 //= require jquery_ujs
 //= require turbolinks
-//= require jquery
-//= require bootstrap-sprockets
+//= require wow.min.js
+//= require easing.js
+//= require jquery.flexisel.js
+//= require move-top.js
+//= require responsiveslides.min.js
