@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require bootstrap-sprockets
-//= require jquery_ujs
 //= require turbolinks
+//= require jquery_ujs
 //= require wow.min.js
 //= require easing.js
 //= require jquery.flexisel.js
