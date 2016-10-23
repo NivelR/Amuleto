@@ -28,3 +28,16 @@ es:
       i_found_a_pet: Encontre una mascota
       i_want_to_adopt: Quiero adoptar
       community: Comunidad
+  layouts:
+    footer:
+      login: Identificarse
+      made_in: Hecho en
+      with: con
+      by: por
+      improve_me: Mejoramé! código en 
+      template_base: Basado en el esquema HTML de
+      power_by: Potenciado por 
+  lost:
+    index:
+      missing: Mascotas
+      pets: perdidas

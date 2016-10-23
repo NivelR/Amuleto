@@ -3,6 +3,11 @@ class LostController < ApplicationController
 
   # GET /lost/new
   def new
-    binding.pry
+    #binding.pry
+  end
+
+  # GET /lost
+  # GET /lost.json
+  def index
   end
 end

@@ -6,21 +6,21 @@
     <% if user_signed_in? %>
      <%= link_to 'Log out', destroy_user_session_path, :method=>'delete', class: "glyphicon glyphicon-user", title: "&nbsp; Cerrar sesión" %></a>
       <% else%>
-      <%= link_to 'Login',  new_user_session_path, class: "active glyphicon glyphicon-user" %>
+      <%= link_to t(".login"),  new_user_session_path, class: "active glyphicon glyphicon-user" %>
     <% end %>
     </div>
    <!--/login -->
 
     <div class="container hidden-xs">
       <div class="text-center" >
-        Made in <a href="https://github.com/rumblex/rubyrampage2016-nivelr">Ruby</a> with <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>  by <span><a href="https://plus.google.com/communities/103833788001935557125">NivelR</a></span>
+        <%=h t(".made_in") %><a href="https://github.com/rumblex/rubyrampage2016-nivelr"> Ruby </a> <%=h t(".with") %> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span>  <%=h t(".by") %> <span><a href="https://plus.google.com/communities/103833788001935557125">NivelR</a></span>
       </div>
       <br>
-      <a href="https://github.com/rumblex/rubyrampage2016-nivelr ">Improve me, code on GitHub </a>. HTML template base by <a href="http://w3layouts.com/">W3layouts. </a>
+      <%=h t(".improve_me") %><a href="https://github.com/rumblex/rubyrampage2016-nivelr "> GitHub</a>. <%=h t(".template_base") %><a href="http://w3layouts.com/">W3layouts. </a>
     </div>
 
    <div class="container visible-xs">
-     <p class="pull-left">Powered by <a href="https://github.com/rumblex/rubyrampage2016-nivelr">Amuleto</a> - <time datetime="2016-10-23">2016</time></p>
+     <p class="pull-left"><%=h t(".power_by") %> <a href="https://github.com/rumblex/rubyrampage2016-nivelr">Amuleto</a> - <time datetime="2016-10-23">2016</time></p>
    </div>
  </div>
 </footer>

@@ -28,3 +28,16 @@ en:
       i_found_a_pet: I found a pet
       i_want_to_adopt: I want to adopt
       community: Community
+  layouts:
+    footer:
+      login: Login
+      made_in: Made in
+      with: with
+      by: by
+      improve_me: Improve me, code on 
+      template_base: HTML template base by 
+      power_by: Powered by
+  lost:
+    index:
+      missing: Missing
+      pets: pets
