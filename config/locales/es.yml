@@ -19,12 +19,12 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 
-en:
+es:
   pages:
     options:
-      welcome: 'Welcome!!! <span>would you like help today?</span>'
-      select_follow_options: You can select any of the following actions to continue.
-      i_lost_my_pet: I lost my pet
-      i_found_a_pet: I found a pet
-      i_want_to_adopt: I want to adopt
-      community: Community
+      welcome: Bienvenido!!! <span>en que te gustaría ayudar hoy</span>
+      select_follow_options: Podes seleccionar alguna de las siguientes acciones para continuar.
+      i_lost_my_pet: Perdí mi mascota
+      i_found_a_pet: Encontre una mascota
+      i_want_to_adopt: Quiero adoptar
+      community: Comunidad

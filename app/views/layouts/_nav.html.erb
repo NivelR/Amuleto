@@ -1,1 +1,14 @@
-
+<div class="menu">
+  <ul>
+    <li>
+      <%= link_to change_locale_path(locale: :es) do %>
+        <img src="<%= asset_path "es_ico.png" %>" alt="Espa&ntilde;ol" >
+      <% end %>
+    </li>
+    <li>
+      <%= link_to change_locale_path(locale: :en) do %>
+        <img src="<%= asset_path "en_ico.png" %>" alt="English" >
+      <% end %>
+    </li>
+  </ul>
+</div>

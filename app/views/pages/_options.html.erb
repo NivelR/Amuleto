@@ -1,8 +1,8 @@
 <!-- content -->
 <div class="content">
   <div class="container">
-    <h3 class="title wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s" >Bienvenido en que <span>te gustaría ayudar hoy</span></h3>
-    <p class="con-para wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s">Podes seleccionar alguna de las siguientes acciones para continuar.</p>
+    <h3 class="title wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s" ><%=h t('.welcome').html_safe %></h3>
+    <p class="con-para wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s"><%=h t(".select_follow_options") %></p>
     <div class="content-grids ">
       
       <div class="col-md-3 wel-grid text-center wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
@@ -12,7 +12,7 @@
           <figure class="icon">
             <img src=<%= asset_path 'icon2.png' %> alt=" " />
           </figure>
-          <h4>Perdí mi mascota</h4>
+          <h4><%=h t(".i_lost_my_pet") %></h4>
         </div>
         </a>
       </div>
@@ -24,7 +24,7 @@
           <figure class="icon">
             <img src=<%= asset_path 'icon1.png' %> alt=" " />
           </figure>
-          <h4>Encontre mascota</h4>
+          <h4><%=h t(".i_found_a_pet") %></h4>
         </div>
         </a>
       </div>
@@ -36,7 +36,7 @@
           <figure class="icon">
             <img src=<%= asset_path 'icon4.png' %> alt=" " />
           </figure>
-          <h4>Quiero adoptar </h4>
+          <h4><%=h t(".i_want_to_adopt") %></h4>
         </div>
         </a>
       </div>
@@ -48,7 +48,7 @@
           <figure class="icon">
             <img src=<%= asset_path 'bone.png' %> alt=" " />
           </figure>
-          <h4>Comunidad</h4>
+          <h4><%=h t(".community") %></h4>
         </div>
         </a>
       </div>
