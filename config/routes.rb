@@ -7,7 +7,11 @@ get '/change_locale/:locale', to: 'settings#change_locale', as: :change_locale
 #paginas estaticas
 get 'pages/index'
 
+
+get 'lost' => 'lost#index'
 get 'lost/new'
+
+get 'found/new'
 
 get 'communities/index'
 

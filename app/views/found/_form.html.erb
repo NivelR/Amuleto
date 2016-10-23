@@ -1,8 +1,6 @@
 <div>
-  <h3 class="title wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s" >Cuéntanos sobre tu mascota.<span></span></h3>
+  <h4 class="title wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s" >Cuéntanos sobre el animal que encontraste.<span></span></h4>
 </div>
-
-<div class="col-md-6">
 
 <fieldset class="form-group">
   <legend>1. ¿De qué tipo es?</legend>
@@ -40,11 +38,6 @@
 </fieldset>
 
 <fieldset class="form-group">
-  <legend>2. Nombre de la mascota:</legend>
-  <input class="form-control" placeholder="ingrese nombre que reconoce su mascota" type="text">
-</fieldset>
-
-<fieldset class="form-group">
   <legend>3. Sexo</legend>
   <div class="form-check">
     <label class="form-check-label">
@@ -58,25 +51,67 @@
       Hembra
     </label>
   </div>
+    <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+      No sé
+    </label>
+  </div>
 </fieldset>
 
-  <fieldset class="form-group">
-  <legend>4. ¿Cómo es tu mascota?</legend>
-    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Describe brevemente caractaristicas y estado de la mascota"></textarea>
-  </fieldset>
-
-  <fieldset class="form-group">
-  <legend>5. ¿Dónde se perdio o fué vista por última vez?</legend>
-    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder=""></textarea>
-  </fieldset>
+<fieldset class="form-group">
+  <legend>4. ¿Cómo es la mascota?</legend>
+  <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Describe brevemente caractaristicas y estado de la mascota"></textarea>
+</fieldset>
 
 <fieldset class="form-group">
-  <legend>6. Nombre del dueño:</legend>
+  <legend>5. ¿Dónde fue vista por última vez?</legend>
+  <textarea class="form-control" id="exampleTextarea" rows="3" placeholder=""></textarea>
+</fieldset>
+
+<fieldset class="form-group">
+  <legend>1. ¿Tu la rescataste?</legend>
+  <% type_array = {perro: "perro", gato: "gato", ave:"ave", roedor:"roedor", reptil: "reptil"} %>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="si" checked>
+        Si, la tengo conmigo
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Gato">
+        Si, la lleve a un refugio
+      </label>
+    </div>
+        <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="si" checked>
+        Si, una persona desconocida.
+      </label>
+    </div>
+        <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="no" checked>
+        No
+      </label>
+    </div>
+        <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios5" value="no sé" checked>
+        No sé
+      </label>
+    </div>
+</fieldset>
+
+
+<fieldset class="form-group">
+  <legend>6. Tu nombre:</legend>
   <input class="form-control" placeholder="ingrese su nombre" type="text">
 </fieldset>
 
 <fieldset class="form-group">
-  <legend>7. Teléfono:</legend>
+  <legend>7. Un númer de contacto:</legend>
   <div class="col-xs-10">
     <input class="form-control" type="tel" value="1-(555)-555-5555" id="tel-input">
   </div>
@@ -91,9 +126,10 @@
 </fieldset>
 
 <br>
+
 <fieldset class="form-group">
-  <legend>9. Foto de tu mascota:</legend>
-  <p>Sube la imagen más reciente donde se la pueda apreciar bien.</p><br>
+  <legend>9. Foto de la mascota:</legend>
+  <p>Si tomaste alguna fotografía compartela con la comunidad.</p><br>
   <label class="custom-file">
     <input type="file" id="file" class="custom-file-input">
     <span class="custom-file-control"></span>
@@ -104,4 +140,4 @@
   <div class="actions">
     <button type="submit" class="btn btn-primary">Siguiente</button>
   </div>
- </div>
+</div>
