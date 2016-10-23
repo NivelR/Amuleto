@@ -7,8 +7,8 @@
     <title><%= content_for?(:title) ? yield(:title) : "Amuleto by NivelR" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Amuleto - Find My Pet please!" %>">
    <!-- for-mobile-apps -->
-	<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
-		function hideURLbar(){ window.scrollTo(0,1); } </script>
+  <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps --> 
 
 <!-- fonts -->
@@ -22,23 +22,23 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
    
-	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-				});
-			});
-		</script>
-	<!-- start-smoth-scrolling -->
-	
-		<!--animate-->
-	<script>
-		 new WOW().init();
-	</script>
+  <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){   
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script>
+  <!-- start-smoth-scrolling -->
+  
+    <!--animate-->
+  <script>
+     new WOW().init();
+  </script>
 <!--//end-animate-->
 
 
@@ -60,11 +60,12 @@
 <hr>
   <footer class="bottom">
     <div class="container hidden-xs">
-
+    <a href="https://github.com/rumblex/rubyrampage2016-nivelr "> Code on GitHub </a>
+    | Made in <a href="https://github.com/rumblex/rubyrampage2016-nivelr ">Ruby</a> with love by <span>NivelR</span>
    </div>
 
    <div class="container visible-xs">
-     
+      
    </div>
  </footer>
 

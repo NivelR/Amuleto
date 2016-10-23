@@ -5,6 +5,8 @@ Rails.application.routes.draw do
 #paginas estaticas
 get 'pages/index'
 
+get 'lost/new'
+
 root to: "pages#index"
  
 end
