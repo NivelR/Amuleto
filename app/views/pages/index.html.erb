@@ -4,39 +4,16 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
- <%= render partial: "header"  %>
-
-
+<div class="header wow fadeInDown animated" data-wow-delay=".5s">
+  <div class="text-center" >
+    <img class="" style="width: auto; height: 175px;" src=<%= asset_path 'logomascotas.png' %> alt=" " />
+  </div>
+   <div class="clearfix">
+</div>
 <!-- content -->
+<div >
   <%= render partial: "options"  %>
+</div>
 <!-- //content -->
 
-<!-- our pets -->
-  <%= render partial: "carousel"  %>
-<!-- //our pets -->
-
-<!-- content-bottom -->
-  <%= render partial: "grid_services"  %>
-<!-- //content-bottom -->
-
-<!-- contact -->
-  <%= render partial: "contact_form"  %>
-<!-- contact -->
-
-<!-- smooth scrolling -->
-  <script type="text/javascript">
-    $(document).ready(function() {
-    /*
-      var defaults = {
-      containerID: 'toTop', // fading element id
-      containerHoverID: 'toTopHover', // fading element hover id
-      scrollSpeed: 1200,
-      easingType: 'linear' 
-      };
-    */                
-    $().UItoTop({ easingType: 'easeOutQuart' });
-    });
-  </script>
-  <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<!-- //smooth scrolling -->
 
