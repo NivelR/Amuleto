@@ -1,0 +1,114 @@
+<div>
+  <h3 class="title wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5s" >Cuéntanos más sobre tu mascota.<span></span></h3>
+</div>
+
+<div class="col-md-6">
+
+<fieldset class="form-group">
+  <legend>1. ¿De qué tipo es?</legend>
+  <% type_array = {perro: "perro", gato: "gato", ave:"ave", roedor:"roedor", reptil: "reptil"} %>
+    <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="Perro" checked>
+        Perro
+      </label>
+    </div>
+    <div class="form-check">
+    <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="Gato">
+        Gato
+      </label>
+    </div>
+        <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="Ave" checked>
+        Ave
+      </label>
+    </div>
+        <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios4" value="Roedor" checked>
+        Roedor
+      </label>
+    </div>
+        <div class="form-check">
+      <label class="form-check-label">
+        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios5" value="Reptil" checked>
+        Reptil
+      </label>
+    </div>
+</fieldset>
+
+<fieldset class="form-group">
+  <legend>2. Nombre de la mascota:</legend>
+  <input class="form-control" placeholder="ingrese nombre que reconoce su mascota" type="text">
+</fieldset>
+
+<fieldset class="form-group">
+  <legend>3. Sexo</legend>
+  <div class="form-check">
+    <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+      Macho
+    </label>
+  </div>
+  <div class="form-check">
+  <label class="form-check-label">
+      <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+      Hembra
+    </label>
+  </div>
+</fieldset>
+
+  <fieldset class="form-group">
+  <legend>4. ¿Cómo es tu mascota?</legend>
+    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Describe brevemente caractaristicas y estado de la mascota"></textarea>
+  </fieldset>
+
+  <fieldset class="form-group">
+  <legend>5. ¿Dónde se perdio o fué vista por última vez?</legend>
+    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder=""></textarea>
+  </fieldset>
+
+<fieldset class="form-group">
+  <legend>6. Nombre del dueño:</legend>
+  <input class="form-control" placeholder="ingrese su nombre" type="text">
+</fieldset>
+
+<fieldset class="form-group">
+  <legend>7. Teléfono:</legend>
+  <div class="col-xs-10">
+    <input class="form-control" type="tel" value="1-(555)-555-5555" id="tel-input">
+  </div>
+</fieldset>
+
+<fieldset class="form-group">
+  <legend>8. Correo eléctronico:</legend>
+  <label for="example-email-input" class="col-xs-2 col-form-label">Email</label>
+  <div class="col-xs-10">
+    <input class="form-control" type="email" value="bootstrap@example.com" id="example-email-input">
+  </div>
+</fieldset>
+
+<br>
+<fieldset class="form-group">
+  <legend>9. Foto de tu mascota:</legend>
+  <label class="custom-file">
+    <input type="file" id="file" class="custom-file-input">
+    <span class="custom-file-control"></span>
+  </label>
+</fieldset>
+
+  <div class="form-group">
+    <!-- #f.label :name, 'Nombre de la mascota: ', class: 'control-label' -->
+    <br>
+    <!-- f.text_field :name, placeholder: "ingrese nombre que reconoce su mascota." , class: 'form-control' -->
+  </div>
+
+
+  <div class="form-group">
+  <div class="actions">
+    <button type="submit" class="btn btn-primary">Siguiente</button>
+  </div>
+ </div>
+<br>
