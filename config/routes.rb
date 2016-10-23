@@ -7,6 +7,8 @@ get 'pages/index'
 
 get 'lost/new'
 
+get 'communities/index'
+
 root to: "pages#index"
  
 end
