@@ -26,7 +26,7 @@ es:
       select_follow_options: Podes seleccionar alguna de las siguientes acciones para continuar.
       i_lost_my_pet: Perdí mi mascota
       i_found_a_pet: Encontre una mascota
-      i_want_to_adopt: Quiero adoptar
+      i_want_to_adopt: Buscar perdidas
       community: Comunidad
   layouts:
     footer:
