@@ -1,1 +1,10 @@
-
+<div class="menu">
+  <ul>
+    <li>
+      <%= link_to image_tag("es_ico", alt: "Español"), change_locale_path(locale: :es) %>
+    </li>
+    <li>
+      <%= link_to image_tag("en_ico", alt: "English"), change_locale_path(locale: :en) %>
+    </li>
+  </ul>
+</div>
