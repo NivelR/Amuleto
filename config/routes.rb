@@ -16,5 +16,11 @@ get 'found/new'
 get 'communities/index'
 
 root to: "pages#index"
- 
+
+namespace :api do
+  namespace :v1 do
+    resources :pets
+  end
+end
+
 end
